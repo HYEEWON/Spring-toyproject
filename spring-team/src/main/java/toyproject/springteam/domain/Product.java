@@ -5,8 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.DynamicInsert;
-import toyproject.springteam.domain.BaseTimeEntity;
-import toyproject.springteam.domain.User;
 
 import javax.persistence.*;
 
