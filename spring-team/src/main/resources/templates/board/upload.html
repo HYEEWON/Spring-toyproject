@@ -4,37 +4,31 @@
 <body>
 <div th:replace="fragments/headerbar :: headerbar" />
 
-
 <main class="container">
     <div class="main" style="text-align:center;">
         <br>
         <div class="wrap-contact100">
-            <form class="contact100-form" action="/products/new" method="post", enctype="multipart/form-data">
+            <form class="contact100-form">
 				<span class="contact100-form-title">
 					내 물건 올리기
 				</span>
 
                 <div class="wrap-input100">
-                    <input class="input100" type="text" name="title" placeholder="제목을 입력해 주세요" required>
-                    <span class="focus-input100"></span>
-                </div>
-
-                <div class="wrap-input100">
-                    <input class="input100" type="number" name="price" placeholder="가격을 입력해 주세요" required>
+                    <input class="input100" type="text" name="name" placeholder="제목을 입력해 주세요">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100" >
-                    <textarea class="input100" type="text" name="description" data-type="currency" placeholder="물건 설명을 입력해 주세요" required></textarea>
+                    <textarea class="input100" name="message" placeholder="물건 설명을 입력해 주세요"></textarea>
                     <span class="focus-input100"></span>
                 </div>
                 <div>
                     <label>사진 첨부</label>
-                    <input type="file" name="multipartFile" class="form-control" accept="image/*" required>
+                    <input type="file" name="file" >
                 </div>
 
                 <div class="container-contact100-form-btn">
-                    <button class="contact100-form-btn" type="submit" value="판매하기">
+                    <button class="contact100-form-btn">
                         물건 올리기
                     </button>
                 </div>
